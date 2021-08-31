@@ -6,7 +6,9 @@ const {
   removeReply
 } = require('../../controllers/comment-controller');
 
-router.route('/:pizzaId').post(addComment);
+router
+  .route('/:pizzaId')
+  .post(addComment);
 
 router
   .route('/:pizzaId/:commentId')
